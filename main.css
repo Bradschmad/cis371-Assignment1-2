@@ -1,0 +1,60 @@
+#mybox {
+  display: grid;
+  min-height: 100vh;
+  grid-template-rows: 100px 1fr 1fr 100px;
+  grid-template-columns: 30% 15% 1fr 15%;
+  grid-template-areas:
+    "area1 area2 area2 area2"
+    "area3 area4 area4 area5"
+    "area3 area6 area7 area7"
+    "area3 area8 area8 area8";
+    
+    gap: 2px;
+}
+
+span {
+  text-align: center;
+  color: white;
+  padding: 1em;
+}
+
+#area1 {
+    background: red;
+    grid-area: area1;
+  }
+
+#area2 {
+    background: blue;
+    grid-area: area2;
+  }
+
+#area3 {
+    background: purple;
+    grid-area: area3;
+  }
+
+#area4 {
+    background: green;
+    grid-area: area4;
+  }
+
+#area5 {
+    background: yellow;
+    grid-area: area5;
+  }
+
+#area6 {
+    background: orange;
+    grid-area: area6;
+  }
+
+#area7 {
+    background: grey;
+    grid-area: area7;
+  }
+
+#area8 {
+    background: pink;
+    grid-area: area8;
+  }
+  
