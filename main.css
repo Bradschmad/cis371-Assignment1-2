@@ -18,6 +18,10 @@ span {
   padding: 1em;
 }
 
+img {
+    float: right;
+}
+
 #area1 {
     background: red;
     grid-area: area1;
