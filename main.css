@@ -27,6 +27,12 @@ img {
     grid-area: area1;
   }
 
+  #area1>img{
+    object-fit: contain;
+    width: 100%;
+    max-height: 100%;
+  }
+
 #area2 {
     background: blue;
     grid-area: area2;
