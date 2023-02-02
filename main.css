@@ -81,6 +81,12 @@ img {
     grid-area: area5;
   }
 
+  #area5 > img{
+    object-fit: fill;
+    width: 100%;
+    height: 100%;
+  }
+
 #area6 {
     background: orange;
     grid-area: area6;
