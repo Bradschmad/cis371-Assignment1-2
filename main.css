@@ -59,12 +59,12 @@ img {
   }
 
 #area3 {
-    background: purple;
+    background: #800080;
     grid-area: area3;
   }
 
 #area4 {
-    background: green;
+    background: rgb(0, 255, 0);
     grid-area: area4;
   }
 
