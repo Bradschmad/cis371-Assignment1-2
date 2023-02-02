@@ -68,6 +68,14 @@ img {
     grid-area: area4;
   }
 
+  #area4 > table tr:nth-child(even) {
+    background: red;
+  }
+
+  #area4 > table tr:hover {
+    background-color: coral;
+  }
+
 #area5 {
     background: yellow;
     grid-area: area5;
