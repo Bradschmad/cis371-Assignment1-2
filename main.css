@@ -63,6 +63,10 @@ img {
     grid-area: area3;
   }
 
+  .areas {
+    font-size: 14px;
+  }
+
 #area4 {
     background: rgb(0, 255, 0);
     grid-area: area4;
