@@ -27,7 +27,7 @@ img {
     grid-area: area1;
   }
 
-  #area1>img{
+  #area1 > img{
     object-fit: contain;
     width: 100%;
     max-height: 100%;
@@ -36,6 +36,26 @@ img {
 #area2 {
     background: blue;
     grid-area: area2;
+    display: block;
+    text-align: center;
+  }
+
+  #area2 > h1 {
+    display: inline-block;
+    text-align: center;
+    padding-right: 30px;
+  }
+
+  #area2 > h2 {
+    display: inline-block;
+    text-align: center;
+    padding-right: 30px;
+  }
+
+  #area2 > h2 > img {
+    object-fit: contain;
+    width: 50px;
+    height: 25px;
   }
 
 #area3 {
