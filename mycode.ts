@@ -22,3 +22,34 @@ let course3 = {
 
 const myCourses: Array<Course> = [course1, course2, course3];
 
+const tArea4 = document.getElementById("area4-table")!;
+const table = document.createElement("table");
+
+//tArea4.appendChild(table);
+
+const thead = document.createElement("th");
+
+const tr1 = document.createElement("td");
+const tr2 = document.createElement("td");
+const tr3 = document.createElement("td");
+tr1.innerText = "Yo";
+tr2.innerText = "Yo";
+tr3.innerText = "Yo";
+thead.appendChild(tr1);
+thead.appendChild(tr2);
+thead.appendChild(tr3);
+table.appendChild(thead);
+tArea4.appendChild(table);
+
+/*
+for (let c of myCourses) {
+    let i: keyof Course
+    const row = document.createElement("tr");
+    for (i in c) {
+        const  cell = document.createElement("td");
+        cell.innerText = "Yo";
+        row.appendChild(cell);
+    }
+    table.appendChild(row);
+}
+*/
