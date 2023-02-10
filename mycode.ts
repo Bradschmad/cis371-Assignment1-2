@@ -1,7 +1,8 @@
+//Area 4
 type Course = {
-    courseNumber: string;
-    courseName: string;
-    semesterTaken: string;
+    courseNumber: string,
+    courseName: string,
+    semesterTaken: string
 }
 
 let course1 = {
@@ -50,4 +51,76 @@ for (let c of myCourses) {
     }
     table.appendChild(row);
 }
-tArea4.appendChild(table);
+tArea4?.appendChild(table);
+
+
+//Area6
+type Company = {
+    name: string,
+    abbreviation: string,
+    url: string
+}
+
+let company1 = {
+    name: "Ford",
+    abbreviation: "FRD",
+    url: "https://www.ford.com/"
+}
+let company2 = {
+    name: "GMC",
+    abbreviation: "GMC",
+    url: "https://www.gmc.com/"
+}
+
+const companies: Array<Company> = [company1, company2];
+
+const lArea6 = document.getElementById("area6-list");
+
+const list = document.createElement("ul");
+
+for (let c of companies) {
+    const item = document.createElement("li");
+    const link = document.createElement("a");
+
+    link.innerText = c.abbreviation;
+    link.href = c.url;
+
+    item.appendChild(link);
+    list.appendChild(item);
+}
+lArea6?.appendChild(list);
+
+
+//Area 8
+type SocialMedia = {
+    icon: string,
+    url: string
+}
+
+let icon1 = {
+    icon: "images/facebook.png",
+    url: "https://www.facebook.com/"
+}
+let icon2 = {
+    icon: "images/twitter.png",
+    url: "https://twitter.com/?lang=en"
+}
+let icon3 = {
+    icon: "images/youtube.png",
+    url: "https://www.youtube.com/"
+}
+let icon4 = {
+    icon: "images/github.png",
+    url: "https://github.com/"
+}
+let icon5 = {
+    icon: "images/steam.png",
+    url: "https://store.steampowered.com/"
+}
+
+const icons: Array<SocialMedia> = [icon1, icon2, icon3, icon4, icon5];
+
+const lArea8 = document.getElementById("area8-flexbox");
+
+const flexbox = document.createElement("div");
+flexbox.id = "flexbox"
