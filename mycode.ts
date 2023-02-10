@@ -22,7 +22,8 @@ let course3 = {
 
 const myCourses: Array<Course> = [course1, course2, course3];
 
-const tArea4 = document.getElementById("area4-table")!;
+const tArea4 = document.getElementById("area4-table");
+tArea4.innerText = "Yo"
 const table = document.createElement("table");
 
 //tArea4.appendChild(table);
