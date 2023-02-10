@@ -5,17 +5,17 @@ type Course = {
 }
 
 let course1 = {
-    courseNumber: "371",
+    courseNumber: "CIS 371",
     courseName: "Web Application Programming",
     semesterTaken: "Winter"
 }
 let course2 = {
-    courseNumber: "360",
+    courseNumber: "CIS 360",
     courseName: "Information Management and Science",
     semesterTaken: "Winter"
 }
 let course3 = {
-    courseNumber: "320",
+    courseNumber: "CIS 320",
     courseName: "Visualization of Data and Information",
     semesterTaken: "Winter"
 }
@@ -23,34 +23,31 @@ let course3 = {
 const myCourses: Array<Course> = [course1, course2, course3];
 
 const tArea4 = document.getElementById("area4-table");
-tArea4.innerText = "Yo"
 const table = document.createElement("table");
 
-//tArea4.appendChild(table);
+const thead = document.createElement("tr");
 
-const thead = document.createElement("th");
+const tr1 = document.createElement("th");
+const tr2 = document.createElement("th");
+const tr3 = document.createElement("th");
 
-const tr1 = document.createElement("td");
-const tr2 = document.createElement("td");
-const tr3 = document.createElement("td");
-tr1.innerText = "Yo";
-tr2.innerText = "Yo";
-tr3.innerText = "Yo";
+tr1.innerText = "Course Number";
+tr2.innerText = "Course Name";
+tr3.innerText = "Semester Taken";
+
 thead.appendChild(tr1);
 thead.appendChild(tr2);
 thead.appendChild(tr3);
-table.appendChild(thead);
-tArea4.appendChild(table);
 
-/*
+table.appendChild(thead);
+
 for (let c of myCourses) {
-    let i: keyof Course
     const row = document.createElement("tr");
-    for (i in c) {
+    for (let key in c) {
         const  cell = document.createElement("td");
-        cell.innerText = "Yo";
+        cell.innerText = c[key];
         row.appendChild(cell);
     }
     table.appendChild(row);
 }
-*/
+tArea4.appendChild(table);

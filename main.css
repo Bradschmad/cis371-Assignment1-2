@@ -72,11 +72,11 @@ img {
     grid-area: area4;
   }
 
-  #area4 > table tr:nth-child(even) {
+  #area4-table > table tr:nth-child(even) {
     background: red;
   }
 
-  #area4 > table tr:hover {
+  #area4-table > table tr:hover {
     background-color: coral;
   }
 
