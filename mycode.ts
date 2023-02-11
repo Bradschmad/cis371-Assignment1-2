@@ -123,4 +123,20 @@ const icons: Array<SocialMedia> = [icon1, icon2, icon3, icon4, icon5];
 const lArea8 = document.getElementById("area8-flexbox");
 
 const flexbox = document.createElement("div");
-flexbox.id = "flexbox"
+flexbox.id = "flexbox";
+
+for (let i of icons) {
+    const icon = document.createElement("div");
+    icon.id= "item";
+
+    const link = document.createElement("a");
+    link.href = i.url;
+
+    const image = document.createElement("img");
+    image.src = i.icon;
+
+    link.appendChild(image);
+    icon.appendChild(link);
+    flexbox.appendChild(icon);
+}
+lArea8?.appendChild(flexbox);
